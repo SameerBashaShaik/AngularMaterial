@@ -5,7 +5,7 @@ import { Component, OnInit } from '@angular/core';
   template: `
    <button mat-button>
   <mat-icon>face</mat-icon>
-  Click me!
+  Click It!
 </button>
 <mat-checkbox>Check me!</mat-checkbox>
   `,
