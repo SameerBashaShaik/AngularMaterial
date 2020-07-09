@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { Component, OnInit, ViewChild, NgZone } from '@angular/core';
 import { UserService } from '../../services/user.service';
 import { Observable } from 'rxjs';
 import { User } from '../../models/user';

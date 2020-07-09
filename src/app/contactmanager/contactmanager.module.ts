@@ -12,6 +12,7 @@ import { ToolbarComponent } from './components/toolbar/toolbar.component';
 import { MainContentComponent } from './components/main-content/main-content.component';
 import { SidenavComponent } from './components/sidenav/sidenav.component';
 import {UserService} from './services/user.service';
+import { NotesComponent } from './components/notes/notes.component';
 
 
 
@@ -20,13 +21,13 @@ const routes:Routes = [
     children: [
       {path: ':id', component: MainContentComponent},
       {path: '', component: MainContentComponent}
-    ] },
+    ] 
+  },
   { path: '**', redirectTo: '' }
-
 ];
 
 @NgModule({
-  declarations: [ContactmanagerAppComponent, ToolbarComponent, MainContentComponent, SidenavComponent],
+  declarations: [ContactmanagerAppComponent, ToolbarComponent, MainContentComponent, SidenavComponent, NotesComponent],
   imports: [
     CommonModule,
     HttpClientModule,
@@ -35,6 +36,7 @@ const routes:Routes = [
     FormsModule,
     RouterModule.forChild(routes)
   ],
+  exports: [RouterModule],
   providers: [
     UserService
   ]
